@@ -1,0 +1,114 @@
+$text: #130e01;
+$background: #fffaeb;
+$primary: #ff8400;
+$secondary: #fff5d6;
+$accent: #cf4307;
+
+.App {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+body {
+  margin: 0px;
+}
+p {
+  font-size: 24px;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  //animation: gradient 15s ease infinite;
+  text-align: start;
+  color: white;
+  width: 100%;
+  background-image: url("data:image/svg+xml;base64,IDxzdmcKICAgICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgdmVyc2lvbj0iMS4xIgogICAgICAgIHZpZXdCb3g9IjAgMCA3MDAgNzAwIgogICAgICAgIHdpZHRoPSI3MDAiCiAgICAgICAgaGVpZ2h0PSI3MDAiCiAgICAgICAgb3BhY2l0eT0iMSIKICAgICAgPgogICAgICAgIDxkZWZzPgogICAgICAgICAgPGxpbmVhckdyYWRpZW50CiAgICAgICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJyb3RhdGUoMTUwLCAwLjUsIDAuNSkiCiAgICAgICAgICAgIHgxPSI1MCUiCiAgICAgICAgICAgIHkxPSIwJSIKICAgICAgICAgICAgeDI9IjUwJSIKICAgICAgICAgICAgeTI9IjEwMCUiCiAgICAgICAgICAgIGlkPSJmZmZsdXgtZ3JhZGllbnQiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxzdG9wCiAgICAgICAgICAgICAgc3RvcC1jb2xvcj0iaHNsKDMxNSwgMTAwJSwgNzIlKSIKICAgICAgICAgICAgICBzdG9wLW9wYWNpdHk9IjEiCiAgICAgICAgICAgICAgb2Zmc2V0PSIwJSIKICAgICAgICAgICAgPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3AKICAgICAgICAgICAgICBzdG9wLWNvbG9yPSJoc2woMjI3LCAxMDAlLCA1MCUpIgogICAgICAgICAgICAgIHN0b3Atb3BhY2l0eT0iMSIKICAgICAgICAgICAgICBvZmZzZXQ9IjEwMCUiCiAgICAgICAgICAgID48L3N0b3A+CiAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgPGZpbHRlcgogICAgICAgICAgICBpZD0iZmZmbHV4LWZpbHRlciIKICAgICAgICAgICAgeD0iLTIwJSIKICAgICAgICAgICAgeT0iLTIwJSIKICAgICAgICAgICAgd2lkdGg9IjE0MCUiCiAgICAgICAgICAgIGhlaWdodD0iMTQwJSIKICAgICAgICAgICAgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IgogICAgICAgICAgICBwcmltaXRpdmVVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICAgICAgIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiIKICAgICAgICAgID4KICAgICAgICAgICAgPGZlVHVyYnVsZW5jZQogICAgICAgICAgICAgIHR5cGU9ImZyYWN0YWxOb2lzZSIKICAgICAgICAgICAgICBiYXNlRnJlcXVlbmN5PSIwLjAwNiAwLjAwMyIKICAgICAgICAgICAgICBudW1PY3RhdmVzPSIyIgogICAgICAgICAgICAgIHNlZWQ9IjIiCiAgICAgICAgICAgICAgc3RpdGNoVGlsZXM9InN0aXRjaCIKICAgICAgICAgICAgICB4PSIwJSIKICAgICAgICAgICAgICB5PSIwJSIKICAgICAgICAgICAgICB3aWR0aD0iMTAwJSIKICAgICAgICAgICAgICBoZWlnaHQ9IjEwMCUiCiAgICAgICAgICAgICAgcmVzdWx0PSJ0dXJidWxlbmNlIgogICAgICAgICAgICA+PC9mZVR1cmJ1bGVuY2U+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1cgogICAgICAgICAgICAgIHN0ZERldmlhdGlvbj0iMjAgMCIKICAgICAgICAgICAgICB4PSIwJSIKICAgICAgICAgICAgICB5PSIwJSIKICAgICAgICAgICAgICB3aWR0aD0iMTAwJSIKICAgICAgICAgICAgICBoZWlnaHQ9IjEwMCUiCiAgICAgICAgICAgICAgaW49InR1cmJ1bGVuY2UiCiAgICAgICAgICAgICAgZWRnZU1vZGU9ImR1cGxpY2F0ZSIKICAgICAgICAgICAgICByZXN1bHQ9ImJsdXIiCiAgICAgICAgICAgID48L2ZlR2F1c3NpYW5CbHVyPgogICAgICAgICAgICA8ZmVCbGVuZAogICAgICAgICAgICAgIG1vZGU9ImNvbG9yLWRvZGdlIgogICAgICAgICAgICAgIHg9IjAlIgogICAgICAgICAgICAgIHk9IjAlIgogICAgICAgICAgICAgIHdpZHRoPSIxMDAlIgogICAgICAgICAgICAgIGhlaWdodD0iMTAwJSIKICAgICAgICAgICAgICBpbj0iU291cmNlR3JhcGhpYyIKICAgICAgICAgICAgICBpbjI9ImJsdXIiCiAgICAgICAgICAgICAgcmVzdWx0PSJibGVuZCIKICAgICAgICAgICAgPjwvZmVCbGVuZD4KICAgICAgICAgICAgPGZlQ29sb3JNYXRyaXgKICAgICAgICAgICAgICB0eXBlPSJzYXR1cmF0ZSIKICAgICAgICAgICAgICB2YWx1ZXM9IjMiCiAgICAgICAgICAgICAgeD0iMCUiCiAgICAgICAgICAgICAgeT0iMCUiCiAgICAgICAgICAgICAgd2lkdGg9IjEwMCUiCiAgICAgICAgICAgICAgaGVpZ2h0PSIxMDAlIgogICAgICAgICAgICAgIGluPSJibGVuZCIKICAgICAgICAgICAgICByZXN1bHQ9ImNvbG9ybWF0cml4IgogICAgICAgICAgICA+PC9mZUNvbG9yTWF0cml4PgogICAgICAgICAgPC9maWx0ZXI+CiAgICAgICAgPC9kZWZzPgogICAgICAgIDxyZWN0CiAgICAgICAgICB3aWR0aD0iNzAwIgogICAgICAgICAgaGVpZ2h0PSI3MDAiCiAgICAgICAgICBmaWxsPSJ1cmwoI2ZmZmx1eC1ncmFkaWVudCkiCiAgICAgICAgICBmaWx0ZXI9InVybCgjZmZmbHV4LWZpbHRlcikiCiAgICAgICAgPjwvcmVjdD4KICAgICAgPC9zdmc+");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  .header-gitLogo {
+    margin-left: 50px;
+    grid-column: 1;
+    grid-row : 2;  
+    img {
+        width: 30px;
+    }
+}
+  .header-name {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+
+    h1 {
+      margin: 0;
+      font-size: 65px;
+      font-family: "Roboto Mono", sans-serif;
+    }
+  }
+}
+
+.noise {
+  position: fixed;
+  z-index: 9999;
+  top: -300%;
+  left: -150%;
+  height: 600%;
+  width: 600%;
+  -webkit-animation: grain 7s steps(10) infinite;
+  animation: grain 7s steps(10) infinite;
+  background-image: url(../../assets/img/noise.png);
+  background-size: 200px;
+  background-repeat: repeat;
+  opacity: 0.25;
+  pointer-events: none;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -5%);
+  }
+  30% {
+    transform: translate(-7%, -25%);
+  }
+  40% {
+    transform: translate(5%, -25%);
+  }
+  50% {
+    transform: translate(15%, -10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translate(15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
