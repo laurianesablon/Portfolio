@@ -1,31 +1,27 @@
-import LinkedinLogo from "./assets/LinkedIn-Logos/In-White-128.png";
-import GitLogo from "./assets/github-mark/github-mark-white.png";
-function App() {
-  return (
-    <div className="App">
-      <div class="noise"></div>
-      <header>
-        <a
-          href="https://github.com/laurianesablon"
-          target="_blank"
-          className="header-gitLogo"
-        >
-          <img src={GitLogo} alt="GitHub Logo" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/lauriane-sablon/"
-          target="_blank"
-          className="header-linkedinLogo"
-        >
-          <img src={LinkedinLogo} alt="LinkedIn Logo" />
-        </a>
+import { useEffect, useState } from "react";
+import { Home } from "./pages/home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createContext } from "react";
 
-        <div className="header-name">
-          <h1>LAURIANE</h1>
-          <h1>SABLON</h1>
-        </div>
-      </header>
-    </div>
+export const ThemeContext = createContext(null);
+function App() {
+  const [theme, setTheme] = useState("light");
+  
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
+  }
+  
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className={`App ${theme}`}>
+        <div className="noise"></div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
