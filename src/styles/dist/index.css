@@ -4,10 +4,6 @@
   letter-spacing: 2px;
 }
 
-body {
-  margin: 0;
-}
-
 .App.light {
   margin: 0px;
   transition: background-color 1s;
@@ -18,8 +14,12 @@ body {
 .App.dark {
   margin: 0px;
   transition: background-color 1s;
-  background-color: #000000;
+  background-color: #1d0036;
   background-size: cover;
+}
+
+body {
+  margin: 0;
 }
 
 p {
@@ -40,133 +40,46 @@ h2 {
   background-color: #1d0036;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  text-align: start;
-  color: white;
-  width: 100%;
-  display: flex;
-}
-main .column-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  gap: 20px;
-}
-main .column-1 .gitLogo {
-  margin-bottom: 10px;
-}
-main .column-1 .gitLogo img {
-  width: 30px;
-}
-main .column-1 .linkedinLogo img {
-  width: 30px;
-}
-main .column-2 {
-  margin-right: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-main .column-2 .dark-mode-toggle {
+.dark-mode-toggle {
   position: relative;
   margin-bottom: 450px;
   margin-left: 80px;
 }
-main .column-2 .sun,
-main .column-2 .moon {
+
+.sun,
+.moon {
   font-size: 3rem;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-main .column-2 .moon {
+
+.moon {
   position: absolute;
   inset: 0;
 }
-main .column-2 .moon-logo {
+
+.moon-logo {
   opacity: 0;
   transform: translateY(20%) rotateZ(50deg);
   transition: all 1s ease-out;
 }
-main .column-2 .sun-logo {
+
+.sun-logo {
   opacity: 1;
   transform: translateY(0) rotateZ(0deg);
   transition: all 1s ease-out;
 }
-main .column-2 .animate-sun {
+
+.animate-sun {
   opacity: 0;
   transform: translateY(20%) rotateZ(100deg);
   color: aliceblue;
 }
-main .column-2 .animate-moon {
+
+.animate-moon {
   opacity: 1;
   transform: translateY(0%) rotateZ(0deg);
   color: aliceblue;
-}
-
-.noise {
-  position: fixed;
-  z-index: 9999;
-  top: -300%;
-  left: -150%;
-  height: 600%;
-  width: 600%;
-  animation: grain 7s steps(10) infinite;
-  background-image: url(../../assets/img/noise.png);
-  background-size: 200px;
-  background-repeat: repeat;
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 70%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-@keyframes grain {
-  0%, 100% {
-    transform: translate(0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, -5%);
-  }
-  30% {
-    transform: translate(-7%, -25%);
-  }
-  40% {
-    transform: translate(5%, -25%);
-  }
-  50% {
-    transform: translate(15%, -10%);
-  }
-  60% {
-    transform: translate(15%);
-  }
-  70% {
-    transform: translate(15%);
-  }
-  80% {
-    transform: translate(3%, 35%);
-  }
-  90% {
-    transform: translate(-10%, 10%);
-  }
 }/*# sourceMappingURL=index.css.map */

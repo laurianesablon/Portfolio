@@ -1,0 +1,34 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  color: white;
+  width: 100%;
+  display: flex;
+}
+header .column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px;
+}
+header .column-1 .social-media-links {
+  display: flex;
+  flex-direction: column;
+}
+header .column-1 .social-media-links .gitLogo {
+  margin-bottom: 10px;
+}
+header .column-1 .social-media-links .gitLogo img {
+  width: 30px;
+}
+header .column-1 .social-media-links .linkedinLogo img {
+  width: 30px;
+}
+header .column-2 {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=header.css.map */
