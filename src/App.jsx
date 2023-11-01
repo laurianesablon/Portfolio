@@ -5,7 +5,8 @@ import { createContext } from "react";
 
 export const ThemeContext = createContext(null);
 function App() {
-  const [theme, setTheme] = useState("light");
+  const localStorageTheme = localStorage.getItem("theme");
+  const [theme, setTheme] = useState(localStorageTheme || "dark");
   
   const toggleTheme = () => {
     setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
