@@ -1,28 +1,28 @@
-import LinkedinLogo from "../assets/LinkedIn-Logos/In-White-128.png";
-import GitLogo from "../assets/github-mark/github-mark-white.png";
+import LinkedinLogo from "../assets/LinkedIn-Logos/In-Blue-128.png";
+import GitLogo from "../assets/github-mark/github-mark-white.svg";
 import { ThemeContext } from "../App";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DarkModeToggle } from "../components/darkModeToggle";
-
+import { weather} from "../utils/apiRequest";
 export function Home() {
   const { toggleTheme } = useContext(ThemeContext);
-  const handleToggleTheme = () => {
-    toggleTheme(); 
-  };
+  const [temperature, setTemperature] = useState(null);
+  const [icon, setIcon] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await weather();
+      setTemperature(response.temperature);
+      setIcon(response.icon);
+    };
+
+    fetchData();
+  }, []);
   return (
+  <>
     <header>
       <div className="column-1">
-        <div>
-          <a>
-            <p>about me</p>
-          </a>
-          <a>
-            <p>projects</p>
-          </a>
-          <a>
-            <p>contact</p>
-          </a>
-        </div>
+        <p className="location">PARIS,FRANCE {temperature}°C </p>
         <div>
           <div className="social-media-links">
             <a
@@ -50,8 +50,27 @@ export function Home() {
       </div>
 
       <div className="column-2">
-        <DarkModeToggle onChange={handleToggleTheme} />
+        <DarkModeToggle onChange={toggleTheme} />
+        <div>
+          <a>
+            <p>about me</p>
+          </a>
+          <a>
+            <p>projects</p>
+          </a>
+          <a>
+            <p>contact</p>
+          </a>
+        </div>
       </div>
     </header>
-  );
+    <main>
+      <div className="about-me">
+        <h3>about me</h3>
+        <p>hey! um, i use my nerdyness to browse the internet looking to build some codeing skills.  </p>
+      </div>
+
+    </main>
+    </>
+  )
 }
