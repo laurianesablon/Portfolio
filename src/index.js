@@ -4,6 +4,8 @@ import App from './App';
 import './styles/dist/animation.css';
 import './styles/dist/index.css';
 import './styles/dist/header.css';
+import './styles/dist/aboutMe.css';
+
 
 
 
