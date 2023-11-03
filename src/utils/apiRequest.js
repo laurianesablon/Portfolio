@@ -8,7 +8,6 @@ export const weather = async () => {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       const temperature = data.current.temp_c;
       const icon = data.current.condition.icon
       return { temperature, icon };
