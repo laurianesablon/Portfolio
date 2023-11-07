@@ -1,3 +1,17 @@
-.about-me-text {
+.about-me {
+  background-color: rgba(255, 255, 255, 0);
+  padding-bottom: 500px;
+  margin-left: 50px;
+  font-size: 34px;
+}
+.about-me h3 {
+  margin-left: 50px;
+}
+.about-me .about-me-text {
   width: 500px;
+  margin: 50px;
+}
+.about-me .about-me-text span {
+  text-decoration: line-through;
+  color: red;
 }/*# sourceMappingURL=aboutMe.css.map */

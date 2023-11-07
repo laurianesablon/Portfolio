@@ -8,16 +8,14 @@
 .App.light {
   margin: 0px;
   transition: background-color 1s;
-
   //animation: gradient 15s ease infinite;
-  color:#8402f5;
+  color:#000000;
 }
 
 
 .App.dark {
   margin: 0px;
   transition: background-color 1s;
-
 }
 
 body {
@@ -36,6 +34,11 @@ h2 {
   font-size: 35px;
 }
 
+.dark-mode-toggle {
+  position: sticky;
+  margin-bottom: 50vh;
+  margin-left: 80%;
+}
 
 .dark {
   background-color: #1d0036;

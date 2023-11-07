@@ -1,5 +1,4 @@
 header {
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -10,7 +9,9 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      margin: 50px;
+      margin-left: 50px;
+      margin-bottom: 50px;
+      
       .social-media-links {
         display: flex;
         flex-direction: column;
@@ -28,24 +29,26 @@ header {
       }
     }
     .column-2 {
-      margin: 50px;
+      margin-right: 50px;
+      margin-bottom: 50px;
       display: flex;
       flex-direction: column;
       text-align: end;
-      .dark-mode-toggle {
-        position: relative;
-        margin-bottom: 50vh;
-        margin-left: 80%;
-      }
+
     }
   }
-  header.light{
+  .main-bg.light{
     background-size: cover;
     background-image: url(../../assets/img/background\ \(1\).webp);
   }
-  header.dark{
+  .main-bg.dark{
     background-image: url(../../assets/img/background-dark.webp);
     background-size: cover;
     color: white;
   }
-
+  .main-bg {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
