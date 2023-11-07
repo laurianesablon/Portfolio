@@ -4,6 +4,7 @@ import { ThemeContext } from "../App";
 import { useContext, useEffect, useState } from "react";
 import { DarkModeToggle } from "../components/darkModeToggle";
 import { weather } from "../utils/apiRequest";
+import { MainBackground } from "../components/mainBackground";
 export function Home() {
   const { toggleTheme } = useContext(ThemeContext);
   const [temperature, setTemperature] = useState(null);
@@ -20,7 +21,8 @@ export function Home() {
   }, []);
   return (
     <>
-      <header className={theme}>
+      <header className="header">
+        <MainBackground theme={theme} />
         <div className="column-1">
           <p className="location">PARIS,FRANCE {temperature}°C </p>
           <div>
@@ -48,6 +50,10 @@ export function Home() {
             <h2>Frontend Developer.</h2>
           </div>
         </div>
+        {/* <div className="mouse-container">
+          <div className="mouse"></div>
+          <div className="scroll">Scroll Down</div>
+        </div> */}
 
         <div className="column-2">
           <DarkModeToggle onChange={toggleTheme} />
@@ -66,12 +72,13 @@ export function Home() {
       </header>
       <main>
         <div className="about-me">
-          <h3>about me</h3>
+          <h3>ABOUT ME</h3>
           <p className="about-me-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            fuga non, voluptatem rerum cum debitis quo, reiciendis aliquid, ut
-            vero modi? Accusamus omnis autem culpa in quisquam, laudantium
-            provident nihil.
+            After studying in high-school for history, geography and social
+            studies, I obviously decided to become a self-tought frontend
+            developer... 
+            I love using my nerdyness to learn about some new
+            programming skills.
           </p>
         </div>
       </main>
