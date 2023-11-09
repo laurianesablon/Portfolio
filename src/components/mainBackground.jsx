@@ -2,6 +2,21 @@ import { useState, useEffect } from "react";
 import Background from "../assets/background.svg";
 
 export function MainBackground({ theme }) {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    // Function to be called when scroll event occurs
+    const handleScroll = () => setScrollY(window.pageYOffset);
+
+    // Add event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up function
+    return () => {
+      // Remove event listener
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
   return (
     <div className="background">
       <svg
@@ -18,7 +33,7 @@ export function MainBackground({ theme }) {
             width="20"
             height="20"
             patternUnits="userSpaceOnUse"
-            patternTransform="translate(-82 68) scale(3.3) rotate(37)"
+            patternTransform={`translate(${-82 + (scrollY /10)} ${-68 + (scrollY /10)}) scale(3.3) rotate(37)`}
             shape-rendering="crispEdges"
           >
             <rect
