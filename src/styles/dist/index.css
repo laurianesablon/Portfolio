@@ -1,28 +1,30 @@
 .App {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "VT323", monospace;
   font-weight: 400;
   margin: 0px;
 }
-
 .App.light {
+  background-color: #FFFAED;
   transition: background-color 1s;
   color: #221202;
-  background-color: #FFFAED;
 }
-
 .App.dark {
-  color: #FFFAED;
-  margin: 0px;
-  transition: background-color 1s;
   background-color: #221202;
+  transition: background-color 1s;
+  color: #FFFAED;
 }
 
 .background {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: 0;
-  background-repeat: round;
+  z-index: -1;
+}
+.background.light {
+  background-color: #FFFAED;
+}
+.background.dark {
+  background-color: #221202;
 }
 
 body {
@@ -43,10 +45,7 @@ h2 {
 
 .dark-mode-toggle {
   position: relative;
-}
-
-.dark {
-  background-color: #221202;
+  height: 55px;
 }
 
 .sun,
