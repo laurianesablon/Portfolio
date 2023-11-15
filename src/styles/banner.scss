@@ -6,6 +6,7 @@ header {
   border-bottom: 1px black solid;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: calc(100% - 40px);
   top: 0;
@@ -22,25 +23,24 @@ header.dark {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items:center;
-  gap: 40%;
-  z-index: 0;
- 
+  justify-content:space-between;
+  margin-top: 73px;
   .red-square {
     position: relative;
     margin-left: 100px;
+    margin-top: 100px;
     background-color: $primary;
-    width: 40vw;
-    height: 40vw;
+    width: 500px;
+    height: 500px;
     .banner-text {
       position: absolute;
       left: 55%;
-      top: 26%;
+      top: 15%;
       h1 {
-        font-size: 6vw;
+        font-size: 113px;
       }
       h2 {
-        font-size: 2.5vw;
+        font-size: 47px;
       }
       span {
         color: $text-dark !important;
@@ -48,14 +48,68 @@ header.dark {
     }
   }
   .banner-links {
-    z-index: 1;
+    margin-right: 50px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: end;
     align-self: end;
+    p {
+      font-size: 34px;
+      margin: 20px;
+    }
     img {
       width: 50px;
     }
 
   }
 }
+
+@media (min-width: 1260px) {
+  .banner .red-square {
+    width: 700px;
+    height: 700px;
+    
+    .banner-text {
+      h1 {
+        font-size: 157px;
+      }
+      
+      h2 {
+        font-size: 65px;
+      }
+    }
+  }
+}
+@media (max-width: 878px) {
+  .banner {
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    height: 82vh;
+    .red-square{
+      width: 65vw;
+      height: 65vw;
+      margin-left: 50px;
+      .banner-text{
+        left: 61%;
+        h1 {
+          font-size: 12.5vw;
+        }
+        h2 {
+          font-size: 5.3vw;
+        }
+      }
+    }
+    .banner-links{
+      margin-left: 50px;
+      flex-direction: row;
+      align-self: start;
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+
