@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Home } from "./pages/home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createContext } from "react";
 import { MainBackground } from "./components/mainBackground";
 
@@ -18,11 +17,7 @@ function App() {
       <div className={`App ${theme}`}>
         <div className="noise"></div>
         {/* <MainBackground /> */}
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </BrowserRouter>
+        <Home />
       </div>
     </ThemeContext.Provider>
   );
