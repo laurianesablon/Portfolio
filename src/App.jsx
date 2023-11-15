@@ -17,8 +17,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className={`App ${theme}`}>
         <div className="noise"></div>
-        <MainBackground />
-
+        {/* <MainBackground /> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
