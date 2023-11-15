@@ -6,6 +6,7 @@ import './styles/dist/index.css';
 import './styles/dist/banner.css';
 import './styles/dist/aboutMe.css';
 import './styles/dist/mouse.css';
+import './styles/dist/projects.css';
 
 
 
