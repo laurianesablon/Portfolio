@@ -5,18 +5,13 @@ export function MainBackground({ theme }) {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    // Function to be called when scroll event occurs
     const handleScroll = () => setScrollY(window.pageYOffset);
-
-    // Add event listener
     window.addEventListener('scroll', handleScroll);
-
-    // Clean up function
     return () => {
-      // Remove event listener
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); 
+  const color = "hsla(30, 85%, 27%, 0.100)"
   return (
     <div className="background">
       <svg
@@ -41,210 +36,210 @@ export function MainBackground({ theme }) {
               height="1"
               x="5"
               y="6"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="6"
               y="6"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="7"
               y="6"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="12"
               y="6"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="13"
               y="6"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="14"
               y="6"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="4"
               y="7"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="8"
               y="7"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="11"
               y="7"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="15"
               y="7"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="3"
               y="8"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="9"
               y="8"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="10"
               y="8"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="16"
               y="8"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="3"
               y="9"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="16"
               y="9"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="3"
               y="10"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="16"
               y="10"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="4"
               y="11"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="15"
               y="11"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="5"
               y="12"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="14"
               y="12"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="6"
               y="13"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="13"
               y="13"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="7"
               y="14"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="12"
               y="14"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="8"
               y="15"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="11"
               y="15"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="9"
               y="16"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
             <rect
               width="1"
               height="1"
               x="10"
               y="16"
-              fill="hsla(30, 85%, 27%, 0.365)"
+              fill={color}
             ></rect>
           </pattern>
         </defs>
@@ -252,4 +247,6 @@ export function MainBackground({ theme }) {
       </svg>
     </div>
   );
+
+  
 }
