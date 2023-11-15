@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.69ed870b.css",
+    "main.js": "/Portfolio/static/js/main.c1239947.js",
+    "static/media/KasaVideo.mp4": "/Portfolio/static/media/KasaVideo.ecd6e2779a2c8aec297f.mp4",
+    "static/media/kasa.png": "/Portfolio/static/media/kasa.bf7dd84884e5cd91b7e0.png",
+    "static/media/noise.png": "/Portfolio/static/media/noise.bd1c2fb4fb757dcbd0e8.png",
+    "static/media/background.svg": "/Portfolio/static/media/background.6a0bbe963fb916f7a0876a25b57fe597.svg",
+    "static/media/sass.svg": "/Portfolio/static/media/sass.3bd84b23ee7ca645327dc4c04edeb72c.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/redux.svg": "/Portfolio/static/media/redux.71eb13e2fdd1de624e9a856125906e3b.svg",
+    "static/media/github-mark-black.svg": "/Portfolio/static/media/github-mark-black.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "static/media/github-mark-white.svg": "/Portfolio/static/media/github-mark-white.2344f94ca7d3106a23d0ef2a933cf2c8.svg",
+    "static/media/React-icon.svg": "/Portfolio/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.69ed870b.css.map": "/Portfolio/static/css/main.69ed870b.css.map",
+    "main.c1239947.js.map": "/Portfolio/static/js/main.c1239947.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69ed870b.css",
+    "static/js/main.c1239947.js"
+  ]
+}
