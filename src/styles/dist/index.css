@@ -6,12 +6,17 @@
 .App.light {
   background-color: #FFFAED;
   transition: background-color 1s;
-  color: #221202;
+  color: #12110F;
 }
 .App.dark {
-  background-color: #221202;
+  background-color: #12110F;
   transition: background-color 1s;
   color: #FFFAED;
+}
+
+h3 {
+  margin-left: 50px;
+  font-size: 54px;
 }
 
 .background {
@@ -24,7 +29,7 @@
   background-color: #FFFAED;
 }
 .background.dark {
-  background-color: #221202;
+  background-color: #12110F;
 }
 
 body {

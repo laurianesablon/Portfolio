@@ -22,4 +22,9 @@
   .about-me .about-me-text {
     width: 100%;
   }
+}
+@media (max-width: 500px) {
+  .about-me .about-me-text p {
+    font-size: 29px;
+  }
 }/*# sourceMappingURL=aboutMe.css.map */
