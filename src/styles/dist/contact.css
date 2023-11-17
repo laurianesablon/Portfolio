@@ -1,0 +1,49 @@
+.contact .contact-form {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .contact-form label {
+  font-size: 30px;
+}
+.contact .contact-form input {
+  height: 30px;
+}
+.contact .contact-form textarea {
+  height: 60px;
+}
+.contact .modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .modal .modal-sent-content {
+  background-color: #dffdce;
+  padding: 20px;
+  border-radius: 10px;
+  width: 190px;
+  position: relative;
+}
+.contact .modal .modal-sent-content .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 29px;
+  color: #f54729;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.contact .modal .modal-sent-content p {
+  font-size: 35px;
+}/*# sourceMappingURL=contact.css.map */

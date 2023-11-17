@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.contact {
+  .contact-form {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    label {
+      font-size: 30px;
+    }
+    input {
+      height: 30px;
+    }
+    textarea {
+      height: 60px;
+    }
+  }
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-sent-content {
+      background-color: $secondary;
+      padding: 20px;
+      border-radius: 10px;
+      width: 190px;
+      position: relative;
+      .close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 29px;
+        color: #f54729;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 35px;
+      }
+    }
+  }
+}

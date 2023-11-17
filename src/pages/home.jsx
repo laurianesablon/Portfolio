@@ -4,26 +4,16 @@ import GitLogoBlack from "../assets/github-mark/github-mark-black.svg";
 import { ThemeContext } from "../App";
 import { useContext, useEffect, useState } from "react";
 import { DarkModeToggle } from "../components/darkModeToggle";
-import { weather } from "../utils/apiRequest";
 import { MainBackground } from "../components/mainBackground";
 import { Card } from "../components/card";
 import kasaImg from "../assets/img/kasa.png";
 import kasaVideo from "../assets/videos/KasaVideo.mp4";
+import { Contact } from "../components/contact";
 
 export function Home() {
   const { toggleTheme } = useContext(ThemeContext);
-  const [temperature, setTemperature] = useState(null);
-  const [icon, setIcon] = useState(null);
   const { theme } = useContext(ThemeContext);
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await weather();
-      setTemperature(response.temperature);
-      setIcon(response.icon);
-    };
 
-    fetchData();
-  }, []);
   return (
     <>
       <header className={theme}>
@@ -80,7 +70,7 @@ export function Home() {
             <Card
               title="Kasa"
               imageUrl={kasaImg}
-              content="Developpement of a real estate application with React"
+              content="Prototype of a real estate app with React."
               videoUrl={kasaVideo}
               theme={theme}
               technologies={["React", "Sass", "Redux"]}
@@ -98,6 +88,10 @@ export function Home() {
               theme={theme}
             />
           </div>
+        </div>
+        <div className="contact">
+          <h3>CONTACT</h3>
+          <Contact/>
         </div>
       </main>
     </>
