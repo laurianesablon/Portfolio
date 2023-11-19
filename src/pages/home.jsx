@@ -57,9 +57,9 @@ export function Home() {
               After studying in high-school for history, geography and social
               studies, I decided to <span>study urbanism and geography</span>{" "}
               become a self-tought frontend developer. I am a nerd that loves to
-              learn some new programming skills. Started with some basic HTML,
-              CSS and JavaScript. I am now <span>a master</span> mastering in React. I also enjoy
-              programming in Python and C.
+              learn new programming skills. Started with some basic HTML,
+              CSS and JavaScript. I am now <span>a master</span> developping in
+              React. I also enjoy programming in Python and C.
             </p>
           </div>
         </div>
@@ -91,8 +91,11 @@ export function Home() {
         </div>
         <div className="contact">
           <h3>CONTACT</h3>
-          <Contact/>
+          <Contact />
         </div>
+        <footer>
+          <p>© 2023 Lauriane Sablon, All Rights Reserved.</p>
+        </footer>
       </main>
     </>
   );
