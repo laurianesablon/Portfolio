@@ -53,8 +53,8 @@ header.dark {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  align-self: end;
+  align-items: flex-end;
+  align-self: flex-end;
 }
 .banner .banner-links p {
   font-size: 34px;
