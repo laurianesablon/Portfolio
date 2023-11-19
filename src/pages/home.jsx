@@ -50,7 +50,7 @@ export function Home() {
             <a className={theme} href="#contact"><p>contact</p></a>
           </div>
         </div>
-        <div id="#aboutme" className="about-me">
+        <div id="aboutme" className="about-me">
           <h3>ABOUT ME</h3>
           <div className="about-me-text">
             <p className={theme}>
@@ -73,7 +73,7 @@ export function Home() {
               content="Prototype of a real estate app with React."
               videoUrl={kasaVideo}
               theme={theme}
-              technologies={["React", "Sass", "Redux"]}
+              technologies={["React", "Sass"]}
             />
             <Card
               title="Kasa"
