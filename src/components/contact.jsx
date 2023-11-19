@@ -16,6 +16,7 @@ export const Contact = () => {
           console.log(result.text);
           setResponse("Message sent!");
           setIsModalOpen(true);
+          form.current.reset(); // Reset the form
       }, (error) => {
           console.log(error.text);
           setResponse(error.text);
@@ -30,12 +31,12 @@ export const Contact = () => {
     <div>
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="name" />
         <label>Email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="email" />
         <label>Message</label>
         <textarea name="message" />
-        <input type="submit" value="Send" />
+        <input className="submit" type="submit" value="Send" />
       </form>
 
       {isModalOpen && (
