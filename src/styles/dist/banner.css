@@ -56,7 +56,16 @@ header.dark {
   align-items: flex-end;
   align-self: flex-end;
 }
-.banner .banner-links p {
+.banner .banner-links a {
+  text-decoration: none;
+}
+.banner .banner-links a.light {
+  color: #12110F;
+}
+.banner .banner-links a.dark {
+  color: #FFFAED;
+}
+.banner .banner-links a p {
   font-size: 34px;
   margin: 20px;
 }

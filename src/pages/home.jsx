@@ -32,7 +32,7 @@ export function Home() {
               </h2>
             </div>
           </div>
-          <div className="banner-links">
+          <div className="banner-links ">
             <a
               href="https://www.linkedin.com/in/lauriane-sablon/"
               target="_blank"
@@ -45,12 +45,12 @@ export function Home() {
                 alt="github"
               />
             </a>
-            <p>about me</p>
-            <p>projects</p>
-            <p>contact</p>
+            <a className={theme} href="#aboutme"><p>about me</p></a>
+            <a className={theme} href="#projects"><p>projects</p></a>
+            <a className={theme} href="#contact"><p>contact</p></a>
           </div>
         </div>
-        <div className="about-me">
+        <div id="#aboutme" className="about-me">
           <h3>ABOUT ME</h3>
           <div className="about-me-text">
             <p className={theme}>
@@ -89,7 +89,7 @@ export function Home() {
             />
           </div>
         </div>
-        <div className="contact">
+        <div id="contact" className="contact">
           <h3>CONTACT</h3>
           <Contact />
         </div>

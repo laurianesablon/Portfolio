@@ -54,10 +54,21 @@ header.dark {
     flex-direction: column;
     align-items: flex-end;
     align-self: flex-end;
-    p {
-      font-size: 34px;
-      margin: 20px;
+
+    a {
+      text-decoration: none;
+      &.light {
+        color: $text-light;
+      }
+      &.dark {
+        color: $text-dark;
+      }
+      p {
+        font-size: 34px;
+        margin: 20px;
+      }
     }
+
     img {
       width: 50px;
     }
@@ -115,19 +126,18 @@ header.dark {
   .banner {
     padding-top: 30px;
     .red-square {
-    width: 90vw;
-    height: 130vw;
-    margin: 0 auto;
-    .banner-text {
-      left: 15%;
-      h1 {
-        font-size: 16.5vw;
-      }
-      h2 {
-        font-size: 8.3vw;
+      width: 90vw;
+      height: 130vw;
+      margin: 0 auto;
+      .banner-text {
+        left: 15%;
+        h1 {
+          font-size: 16.5vw;
+        }
+        h2 {
+          font-size: 8.3vw;
+        }
       }
     }
   }
-  }
-  
 }
