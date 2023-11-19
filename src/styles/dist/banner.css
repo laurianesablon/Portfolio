@@ -29,14 +29,14 @@ header.dark {
 .banner .red-square {
   position: relative;
   margin-left: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #f54729;
   width: 500px;
   height: 500px;
 }
 .banner .red-square .banner-text {
   position: absolute;
-  left: 55%;
+  left: 47%;
   top: 15%;
 }
 .banner .red-square .banner-text h1 {
@@ -66,8 +66,8 @@ header.dark {
 
 @media (min-width: 1260px) {
   .banner .red-square {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
   }
   .banner .red-square .banner-text h1 {
     font-size: 157px;
@@ -81,7 +81,7 @@ header.dark {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    height: 82vh;
+    height: 58vh;
   }
   .banner .red-square {
     width: 65vw;
@@ -104,5 +104,24 @@ header.dark {
   }
   .banner .banner-links p {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    padding-top: 30px;
+  }
+  .banner .red-square {
+    width: 90vw;
+    height: 130vw;
+    margin: 0 auto;
+  }
+  .banner .red-square .banner-text {
+    left: 15%;
+  }
+  .banner .red-square .banner-text h1 {
+    font-size: 16.5vw;
+  }
+  .banner .red-square .banner-text h2 {
+    font-size: 8.3vw;
   }
 }/*# sourceMappingURL=banner.css.map */

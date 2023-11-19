@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+footer {
+    border-top: 1px solid $background-light;
+    margin-top: 100px;
+    height: 200px;
+    background-color: $background-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: $text-dark;
+        font-size: 24px;
+        text-align: center;
+    }
+}

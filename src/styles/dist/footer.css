@@ -1,0 +1,14 @@
+footer {
+  border-top: 1px solid #FFFAED;
+  margin-top: 100px;
+  height: 200px;
+  background-color: #12110F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #FFFAED;
+  font-size: 24px;
+  text-align: center;
+}/*# sourceMappingURL=footer.css.map */
