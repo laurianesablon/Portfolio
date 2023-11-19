@@ -90,7 +90,7 @@ header.dark {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    height: 58vh;
+    height: 78vh;
   }
   .banner .red-square {
     width: 65vw;
@@ -115,13 +115,13 @@ header.dark {
     display: none;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .banner {
     padding-top: 30px;
   }
   .banner .red-square {
     width: 90vw;
-    height: 130vw;
+    height: 160vw;
     margin: 0 auto;
   }
   .banner .red-square .banner-text {
