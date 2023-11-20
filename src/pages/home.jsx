@@ -45,9 +45,15 @@ export function Home() {
                 alt="github"
               />
             </a>
-            <a className={theme} href="#aboutme"><p>about me</p></a>
-            <a className={theme} href="#projects"><p>projects</p></a>
-            <a className={theme} href="#contact"><p>contact</p></a>
+            <a className={theme} href="#aboutme">
+              <p>about me</p>
+            </a>
+            <a className={theme} href="#projects">
+              <p>projects</p>
+            </a>
+            <a className={theme} href="#contact">
+              <p>contact</p>
+            </a>
           </div>
         </div>
         <div id="aboutme" className="about-me">
@@ -57,9 +63,10 @@ export function Home() {
               After studying in high-school for history, geography and social
               studies, I decided to <span>study urbanism and geography</span>{" "}
               become a self-tought frontend developer. I am a nerd that loves to
-              learn new programming skills. Started with some basic HTML,
-              CSS and JavaScript. I am now <span>a master</span> developping in
-              React. I also enjoy programming in Python and C.
+              learn new programming skills. Started with some basic HTML, CSS
+              and JavaScript. I am now <span>a master</span> mastering in React.
+              I also enjoy programming in Python and C.{" "}
+              <span>this is not true nobody enjoys C programming</span>
             </p>
           </div>
         </div>
