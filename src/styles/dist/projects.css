@@ -1,3 +1,6 @@
+.projects {
+  padding: 0 50px;
+}
 .projects h3 {
   margin-left: 50px;
   font-size: 54px;
@@ -7,54 +10,53 @@
   justify-content: center;
   gap: 20px;
   overflow: scroll;
-  flex-wrap: wrap;
 }
-.projects .projects-container .card {
-  width: 25rem;
-  height: 20rem;
+.projects .projects-container .card-container {
+  width: 22rem;
+  height: 17rem;
+}
+.projects .projects-container .card-container .card {
+  width: 100%;
+  height: 90%;
   border-radius: 10px;
   cursor: pointer;
-  position: relative;
   color: #12110F;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
-.projects .projects-container .card img {
+.projects .projects-container .card-container .card img {
   border-radius: 10px;
-  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   opacity: 0.9;
   transition: opacity 0.2s ease-out;
 }
-.projects .projects-container .card h2 {
+.projects .projects-container .card-container .card h2 {
   position: absolute;
   top: 50%;
 }
-.projects .projects-container .card p,
-.projects .projects-container .card a {
+.projects .projects-container .card-container .card p,
+.projects .projects-container .card-container .card a {
   position: absolute;
   opacity: 0;
   max-width: 80%;
   transition: opacity 0.3s ease-out;
 }
-.projects .projects-container .card p {
+.projects .projects-container .card-container .card p {
   inset: auto auto 80px 30px;
 }
-.projects .projects-container .card a {
+.projects .projects-container .card-container .card a {
   inset: auto auto 40px 30px;
   color: inherit;
   text-decoration: none;
 }
-.projects .projects-container .card:hover p, .projects .projects-container .card:hover a {
+.projects .projects-container .card-container .card:hover p, .projects .projects-container .card-container .card:hover a {
   opacity: 1;
   transition: opacity 0.5s 0.1s ease-in;
 }
-.projects .projects-container .card:hover img {
+.projects .projects-container .card-container .card:hover img {
   transition: opacity 0.3s ease-in;
   opacity: 1;
 }
@@ -138,7 +140,13 @@
 }
 
 @media (max-width: 878px) {
-  .projects .projects-container .card {
+  .projects .projects-container {
+    flex-wrap: wrap;
+  }
+  .projects .projects-container .card-container {
     width: 80vw;
+  }
+  .projects .projects-container .card-container .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=projects.css.map */
