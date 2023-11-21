@@ -77,7 +77,7 @@ export function Home() {
             <Card
               title="Kasa"
               imageUrl={kasaImg}
-              content="Prototype of a real estate app with React."
+              content="Prototype of a rental accomodation app with React. It was done during my Openclassrooms online course. This was my first React project and I learned a lot about React, SCSS and manipulating data."
               videoUrl={kasaVideo}
               theme={theme}
               technologies={["React", "Sass"]}
