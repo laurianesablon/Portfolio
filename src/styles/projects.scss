@@ -17,7 +17,7 @@
       height: 17rem;
       .card {
         width: 100%;
-        height: 90%;
+        height: 83%;
         border-radius: 10px;
         cursor: pointer;
         color: $text-light;
@@ -76,74 +76,65 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: none;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0px;
     .modal-container {
-      border: 1px solid #888;
-      width: 65%;
-      // height: 65%;
-      display: flex;
-      gap: 20px;
-      &.light {
-        background-color: $background-light;
-        color: $text-light;
-      }
-      &.dark {
-        background-color: $background-dark;
-        color: $text-dark;
-      }
-      .video-container {
-        max-height: 700px;
-        video {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 70px;
+      .image-container {
+        height: 30%;
+        width: 100%;
+        img {
+          object-fit: cover;
           width: 100%;
           height: 100%;
-          object-fit: contain;
-          object-position: 0% 50%;
         }
       }
+      .close-button {
+        position: absolute;
+        color: black;
+        font-size: 35px;
+        top: 10px;
+        left: 15px;
+        cursor: pointer;
+      }
       .modal-content {
-        display: flex;
-        flex-direction: column;
-        h3 {
-          margin: 0;
-          font-size: 84px;
+        padding: 30px;
+        .modal-link-buttons {
+          display: flex;
+          gap: 20px;
+          div {
+            background-color: white;
+            border: $background-dark 1px solid;
+            padding: 7px;
+            width: 100px;
+            text-align: center;
+            font-size: 24px;
+          }
         }
-
         .technologies {
           ul {
             display: flex;
-            padding: 0;
+            padding-left: 0px;
             li {
               list-style-type: none;
               img {
-                width: 60px;
+                width: 50px;
               }
             }
           }
         }
       }
-      .modal-link-buttons {
-        display: flex;
-        gap: 10px;
-        div {
-          font-size: 24px;
-          border: 1px solid black;
-          background-color: white;
-          color: $text-light !important;
-          padding: 5px;
-        }
-      }
 
-      .close-button {
-        font-size: 29px;
-        color: $primary;
-        margin-right: 10px;
-        margin-top: 10px;
+      &.light {
+        background-color: $background-light;
       }
+      &.dark {
+        background-color: $background-dark;
+      }
+      width: 30%;
     }
   }
 }

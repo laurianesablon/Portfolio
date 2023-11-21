@@ -17,7 +17,7 @@
 }
 .projects .projects-container .card-container .card {
   width: 100%;
-  height: 90%;
+  height: 83%;
   border-radius: 10px;
   cursor: pointer;
   color: #12110F;
@@ -67,72 +67,64 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: none;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0px;
 }
 .projects .modal .modal-container {
-  border: 1px solid #888;
-  width: 65%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 70px;
+  width: 30%;
+}
+.projects .modal .modal-container .image-container {
+  height: 30%;
+  width: 100%;
+}
+.projects .modal .modal-container .image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.projects .modal .modal-container .close-button {
+  position: absolute;
+  color: black;
+  font-size: 35px;
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+}
+.projects .modal .modal-container .modal-content {
+  padding: 30px;
+}
+.projects .modal .modal-container .modal-content .modal-link-buttons {
   display: flex;
   gap: 20px;
 }
-.projects .modal .modal-container.light {
-  background-color: #FFFAED;
-  color: #12110F;
-}
-.projects .modal .modal-container.dark {
-  background-color: #12110F;
-  color: #FFFAED;
-}
-.projects .modal .modal-container .video-container {
-  max-height: 700px;
-}
-.projects .modal .modal-container .video-container video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: 0% 50%;
-     object-position: 0% 50%;
-}
-.projects .modal .modal-container .modal-content {
-  display: flex;
-  flex-direction: column;
-}
-.projects .modal .modal-container .modal-content h3 {
-  margin: 0;
-  font-size: 84px;
+.projects .modal .modal-container .modal-content .modal-link-buttons div {
+  background-color: white;
+  border: #12110F 1px solid;
+  padding: 7px;
+  width: 100px;
+  text-align: center;
+  font-size: 24px;
 }
 .projects .modal .modal-container .modal-content .technologies ul {
   display: flex;
-  padding: 0;
+  padding-left: 0px;
 }
 .projects .modal .modal-container .modal-content .technologies ul li {
   list-style-type: none;
 }
 .projects .modal .modal-container .modal-content .technologies ul li img {
-  width: 60px;
+  width: 50px;
 }
-.projects .modal .modal-container .modal-link-buttons {
-  display: flex;
-  gap: 10px;
+.projects .modal .modal-container.light {
+  background-color: #FFFAED;
 }
-.projects .modal .modal-container .modal-link-buttons div {
-  font-size: 24px;
-  border: 1px solid black;
-  background-color: white;
-  color: #12110F !important;
-  padding: 5px;
-}
-.projects .modal .modal-container .close-button {
-  font-size: 29px;
-  color: #f54729;
-  margin-right: 10px;
-  margin-top: 10px;
+.projects .modal .modal-container.dark {
+  background-color: #12110F;
 }
 
 .material-symbols-outlined {
