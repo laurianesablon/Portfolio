@@ -42,9 +42,7 @@ export function Card({ title, content, imageUrl, videoUrl, technologies }) {
         <img src={imageUrl} alt="" />
         <div className="card-content">
           <a href="#" className="button">
-            Find out more{" "}
-            <span className="material-symbols-outlined">
-            </span>
+            Find out more <span className="material-symbols-outlined"></span>
           </a>
         </div>
       </div>
@@ -52,16 +50,17 @@ export function Card({ title, content, imageUrl, videoUrl, technologies }) {
       {isModalOpen && (
         <dialog open className="modal">
           <div className={`modal-container ${theme}`}>
-            <div className="video-container">
-              <video className="video" autoPlay muted src={videoUrl}></video>
+            <div className="image-container">
+              <img src={imageUrl} />
             </div>
+
             <div className="modal-content">
-              <h3>{title}</h3>
+              <h2>{title}</h2>
               <p>{content}</p>
-              
+
               <div className="modal-link-buttons">
-                <div>Voir le code</div>
-                <div>Accès au site</div>
+                <div>See code</div>
+                <div>Website</div>
               </div>
               <div className="technologies">
                 <ul>
@@ -72,8 +71,11 @@ export function Card({ title, content, imageUrl, videoUrl, technologies }) {
                   ))}
                 </ul>
               </div>
-            </div>            
-            <i className="fa-solid fa-xmark close-button" onClick={handleCloseModal}></i>
+            </div>
+            <i
+              class="fa-solid fa-arrow-left close-button"
+              onClick={handleCloseModal}
+            ></i>
           </div>
         </dialog>
       )}
