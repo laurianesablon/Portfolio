@@ -2,29 +2,43 @@
   margin-left: 50px;
   font-size: 54px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
-.about-me .about-me-text {
+.about-me h3 {
+  margin-top: 0px;
+}
+.about-me .about-me-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+.about-me .about-me-content .about-me-text {
   width: 50%;
 }
-.about-me .about-me-text p {
+.about-me .about-me-content .about-me-text p {
   font-size: 46px;
   font-weight: 600;
 }
-.about-me .about-me-text span {
+.about-me .about-me-content .about-me-text span {
   text-decoration: line-through;
   color: red;
+}
+.about-me .about-me-content img {
+  margin: 46px auto;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 878px) {
   .about-me {
     margin-right: 50px;
   }
-  .about-me .about-me-text {
+  .about-me .about-me-content .about-me-text {
     width: 100%;
   }
-}
-@media (max-width: 500px) {
-  .about-me .about-me-text p {
+  .about-me .about-me-content .about-me-text p {
     font-size: 29px;
   }
 }/*# sourceMappingURL=aboutMe.css.map */

@@ -36,11 +36,12 @@ header.dark {
       position: absolute;
       left: 47%;
       top: 15%;
+      line-height: 100px;
       h1 {
-        font-size: 113px;
+        font-size: 130px;
       }
       h2 {
-        font-size: 47px;
+        font-size: 55px;
       }
       span {
         color: $text-dark !important;
@@ -112,7 +113,7 @@ header.dark {
       }
     }
     .banner-links {
-      margin-left: 50px;
+      margin-left: 7%;
       flex-direction: row;
       align-self: start;
       p {
@@ -130,6 +131,8 @@ header.dark {
       height: 160vw;
       margin: 0 auto;
       .banner-text {
+        line-height: 70px;
+        color: $background-light;
         left: 15%;
         h1 {
           font-size: 16.5vw;

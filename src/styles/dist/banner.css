@@ -38,12 +38,13 @@ header.dark {
   position: absolute;
   left: 47%;
   top: 15%;
+  line-height: 100px;
 }
 .banner .red-square .banner-text h1 {
-  font-size: 113px;
+  font-size: 130px;
 }
 .banner .red-square .banner-text h2 {
-  font-size: 47px;
+  font-size: 55px;
 }
 .banner .red-square .banner-text span {
   color: #FFFAED !important;
@@ -107,7 +108,7 @@ header.dark {
     font-size: 5.3vw;
   }
   .banner .banner-links {
-    margin-left: 50px;
+    margin-left: 7%;
     flex-direction: row;
     align-self: start;
   }
@@ -125,6 +126,8 @@ header.dark {
     margin: 0 auto;
   }
   .banner .red-square .banner-text {
+    line-height: 70px;
+    color: #FFFAED;
     left: 15%;
   }
   .banner .red-square .banner-text h1 {
