@@ -75,6 +75,7 @@
   right: 0;
   bottom: 0;
   top: 70px;
+  overflow: scroll;
   width: 30%;
 }
 .projects .modal .modal-container .image-container {
@@ -97,7 +98,6 @@
 }
 .projects .modal .modal-container .modal-content {
   padding: 30px;
-  overflow: scroll;
 }
 .projects .modal .modal-container .modal-content .modal-link-buttons {
   display: flex;

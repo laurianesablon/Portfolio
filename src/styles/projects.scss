@@ -83,6 +83,8 @@
       right: 0;
       bottom: 0;
       top: 70px;
+      overflow: scroll;
+
       .image-container {
         height: 30%;
         width: 100%;
@@ -102,7 +104,6 @@
       }
       .modal-content {
         padding: 30px;
-        overflow: scroll;
         .modal-link-buttons {
           display: flex;
           gap: 20px;
