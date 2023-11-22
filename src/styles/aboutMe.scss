@@ -3,35 +3,44 @@
   margin-left: 50px;
   font-size: 54px;
   text-transform: uppercase;
-
-  .about-me-text {
-    width: 50%;
-    p {
-      font-size: 46px;
-      font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin-top: 0px;
+  }
+  .about-me-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    .about-me-text {
+      width: 50%;
+      p {
+        font-size: 46px;
+        font-weight: 600;
+      }
+      span {
+        text-decoration: line-through;
+        color: red;
+      }
     }
-    span {
-      text-decoration: line-through;
-      color: red;
+    img {
+      margin: 46px auto;
+      height: 500px;
+      object-fit: cover;
     }
   }
 }
+
 
 @media (max-width: 878px) {
   .about-me {
     margin-right: 50px;
-
-    .about-me-text {
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .about-me {
-    .about-me-text {
-      p {
-        font-size: 29px;
+    .about-me-content {
+      .about-me-text {
+        width: 100%;
+        p {
+          font-size: 29px;
+        }
       }
     }
   }
