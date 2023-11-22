@@ -103,6 +103,12 @@
       }
       .modal-content {
         padding: 30px;
+        .light {
+          color: $text-light;
+        }
+        .dark {
+          color: $text-dark;
+        }
         .modal-link-buttons {
           display: flex;
           gap: 20px;

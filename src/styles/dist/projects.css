@@ -98,6 +98,12 @@
 .projects .modal .modal-container .modal-content {
   padding: 30px;
 }
+.projects .modal .modal-container .modal-content .light {
+  color: #12110F;
+}
+.projects .modal .modal-container .modal-content .dark {
+  color: #FFFAED;
+}
 .projects .modal .modal-container .modal-content .modal-link-buttons {
   display: flex;
   gap: 20px;

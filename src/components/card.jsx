@@ -55,8 +55,8 @@ export function Card({ title, content, imageUrl, videoUrl, technologies }) {
             </div>
 
             <div className="modal-content">
-              <h2>{title}</h2>
-              <p>{content}</p>
+              <h2 className={theme}>{title}</h2>
+              <p className={theme}>{content}</p>
 
               <div className="modal-link-buttons">
                 <div>See code</div>
