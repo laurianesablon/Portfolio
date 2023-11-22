@@ -102,6 +102,7 @@
       }
       .modal-content {
         padding: 30px;
+        overflow: scroll;
         .modal-link-buttons {
           display: flex;
           gap: 20px;
@@ -152,6 +153,19 @@
         .card {
           width: 100%;
         }
+      }
+      .modal .modal-container{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    .projects-container {
+      .modal .modal-container{
+        width: 80%;
       }
     }
   }

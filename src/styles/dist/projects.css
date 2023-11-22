@@ -97,6 +97,7 @@
 }
 .projects .modal .modal-container .modal-content {
   padding: 30px;
+  overflow: scroll;
 }
 .projects .modal .modal-container .modal-content .modal-link-buttons {
   display: flex;
@@ -140,5 +141,13 @@
   }
   .projects .projects-container .card-container .card {
     width: 100%;
+  }
+  .projects .projects-container .modal .modal-container {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .projects .projects-container .modal .modal-container {
+    width: 80%;
   }
 }/*# sourceMappingURL=projects.css.map */
