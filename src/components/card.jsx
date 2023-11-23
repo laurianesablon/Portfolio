@@ -6,7 +6,7 @@ import SassIcon from "../assets/icons/sass.svg";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 
-export function Card({ title, content, imageUrl, videoUrl, technologies }) {
+export function Card({ title, content, imageUrl, technologies }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const React = ReactIcon;
   const Redux = ReduxIcon;
