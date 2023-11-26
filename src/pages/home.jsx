@@ -6,7 +6,8 @@ import { useContext } from "react";
 import { DarkModeToggle } from "../components/darkModeToggle";
 import { Card } from "../components/card";
 import kasaImg from "../assets/img/kasa.png";
-import kasaVideo from "../assets/videos/KasaVideo.mp4";
+import MetropleImg from "../assets/img/MetropleImg.png";
+import SophieBluelImg from "../assets/img/SophieBluel.webp";
 import { Contact } from "../components/contact";
 import Lauriane from "../assets/img/Lauriane.webp";
 
@@ -65,7 +66,7 @@ export function Home() {
                 studies, I decided to <span>study urbanism and geography</span>{" "}
                 become a self-taught frontend developer. I am a nerd who loves
                 to learn new programming skills. Started with some basic HTML,
-                CSS and JavaScript. I am now <span>a master</span> mastering in
+                CSS and JavaScript. I am now <span>a master</span> great at
                 React. I also enjoy programming in Python and C.{" "}
                 <span>This is not true nobody enjoys C programming</span>
               </p>
@@ -81,20 +82,25 @@ export function Home() {
               title="Kasa"
               imageUrl={kasaImg}
               content="Prototype of a rental accomodation app with React. It was done during my Openclassrooms online course. This was my first React project and I learned a lot about React, SCSS and manipulating data."
-              videoUrl={kasaVideo}
               theme={theme}
               technologies={["React", "Sass"]}
+              githubUrl={"https://github.com/laurianesablon/Kasa"}
+              websiteUrl={"https://laurianesablon.github.io/Kasa/"}
             />
             <Card
-              title="Kasa"
-              imageUrl={kasaImg}
-              content="Developpement d'un application de location immobilière avec React"
+              title="Un-named Parisian Subway project"
+              imageUrl={MetropleImg}
+              content="I want to do a game about the parisian metro system. Either a game where the user has to find as much subway stations as they can. Or a game where the user has to find the best itinerary to go from one station to an other. Maybe both? I'll see. This is my first real autonomous React project, i cannot wait to see how it will turn out."
+              technologies={["React", "Sass", "D3"]}
+              githubUrl={"https://github.com/laurianesablon/metrople"}
               theme={theme}
             />
             <Card
-              title="Kasa"
-              imageUrl={kasaImg}
-              content="Developpement d'un application de location immobilière avec React"
+              title="Sophie Bluel's portfolio"
+              imageUrl={SophieBluelImg}
+              content="Prototype of a portfolio for a french artist. It was done during my Openclassrooms online course. I learned how to use API with this project and it was my first big JS project"
+              technologies={["JS", "HTML", "Sass"]}
+              githubUrl={"https://github.com/laurianesablon/Porfolio-Sophie-Bluel"}
               theme={theme}
             />
           </div>
