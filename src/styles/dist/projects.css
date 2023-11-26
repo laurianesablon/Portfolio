@@ -108,17 +108,26 @@
   display: flex;
   gap: 20px;
 }
-.projects .modal .modal-container .modal-content .modal-link-buttons div {
+.projects .modal .modal-container .modal-content .modal-link-buttons a {
+  text-decoration: none;
+  color: #12110F;
+}
+.projects .modal .modal-container .modal-content .modal-link-buttons a div {
+  text-decoration: none;
   background-color: white;
   border: #12110F 1px solid;
   padding: 7px;
-  width: 100px;
+  width: 110px;
   text-align: center;
   font-size: 24px;
+}
+.projects .modal .modal-container .modal-content .technologies {
+  margin-top: 50px;
 }
 .projects .modal .modal-container .modal-content .technologies ul {
   display: flex;
   padding-left: 0px;
+  gap: 15px;
 }
 .projects .modal .modal-container .modal-content .technologies ul li {
   list-style-type: none;

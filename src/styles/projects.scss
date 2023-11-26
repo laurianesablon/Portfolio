@@ -112,19 +112,26 @@
         .modal-link-buttons {
           display: flex;
           gap: 20px;
-          div {
-            background-color: white;
-            border: $background-dark 1px solid;
-            padding: 7px;
-            width: 100px;
-            text-align: center;
-            font-size: 24px;
+          a {
+            text-decoration: none;
+            color: $text-light;
+            div {
+              text-decoration: none;
+              background-color: white;
+              border: $background-dark 1px solid;
+              padding: 7px;
+              width: 110px;
+              text-align: center;
+              font-size: 24px;
+            }
           }
         }
         .technologies {
+          margin-top: 50px;
           ul {
             display: flex;
             padding-left: 0px;
+            gap: 15px;
             li {
               list-style-type: none;
               img {
@@ -160,7 +167,7 @@
           width: 100%;
         }
       }
-      .modal .modal-container{
+      .modal .modal-container {
         width: 50%;
       }
     }
@@ -170,7 +177,7 @@
 @media (max-width: 500px) {
   .projects {
     .projects-container {
-      .modal .modal-container{
+      .modal .modal-container {
         width: 80%;
       }
     }
