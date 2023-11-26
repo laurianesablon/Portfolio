@@ -3,13 +3,16 @@ import React, { useState } from "react";
 import ReactIcon from "../assets/icons/React-icon.svg";
 import ReduxIcon from "../assets/icons/redux.svg";
 import SassIcon from "../assets/icons/sass.svg";
-import { useContext } from "react";
-import { ThemeContext } from "../App";
+import JavaScriptIcon from "../assets/icons/JS.jpg"
+import D3Icon from "../assets/icons/d3.svg";
+import HTMLIcon from "../assets/icons/HTML.png";
 
-export function Card({ title, content, imageUrl, technologies }) {
+import { ThemeContext } from "../App";
+import { useContext } from "react";
+
+export function Card({ title, content, imageUrl, technologies, githubUrl, websiteUrl }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const React = ReactIcon;
-  const Redux = ReduxIcon;
+
   const Sass = SassIcon;
   const { theme } = useContext(ThemeContext);
 
@@ -29,6 +32,12 @@ export function Card({ title, content, imageUrl, technologies }) {
         return ReduxIcon;
       case "Sass":
         return SassIcon;
+      case "D3":
+        return D3Icon;
+      case "JS":
+        return JavaScriptIcon;
+      case "HTML":
+        return HTMLIcon;
       default:
         return null;
     }
@@ -59,14 +68,14 @@ export function Card({ title, content, imageUrl, technologies }) {
               <p className={theme}>{content}</p>
 
               <div className="modal-link-buttons">
-                <div>See code</div>
-                <div>Website</div>
+                {githubUrl && <a href={githubUrl} target="_blank" ><div>See code</div></a>}
+                {websiteUrl && <a href={websiteUrl} target="_blank" ><div>See website</div></a>}
               </div>
               <div className="technologies">
                 <ul>
                   {technologies?.map((technology, index) => (
                     <li key={index}>
-                      <img src={getIcon(technology)} />
+                      <img src={getIcon(technology)} alt={technology} />
                     </li>
                   ))}
                 </ul>
