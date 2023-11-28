@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.cbba791a.css",
-    "main.js": "/Portfolio/static/js/main.c862b34a.js",
+    "main.css": "/Portfolio/static/css/main.8c7e4d5a.css",
+    "main.js": "/Portfolio/static/js/main.4d6e1489.js",
     "static/media/kasa.png": "/Portfolio/static/media/kasa.bf7dd84884e5cd91b7e0.png",
     "static/media/Lauriane.webp": "/Portfolio/static/media/Lauriane.63ac084e0056d422804a.webp",
     "static/media/MetropleImg.png": "/Portfolio/static/media/MetropleImg.80851612524975a6eaaf.png",
@@ -17,11 +17,11 @@
     "static/media/github-mark-black.svg": "/Portfolio/static/media/github-mark-black.6fa18895f6e6c7772cab7049f7e05f59.svg",
     "static/media/github-mark-white.svg": "/Portfolio/static/media/github-mark-white.2344f94ca7d3106a23d0ef2a933cf2c8.svg",
     "static/media/React-icon.svg": "/Portfolio/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.cbba791a.css.map": "/Portfolio/static/css/main.cbba791a.css.map",
-    "main.c862b34a.js.map": "/Portfolio/static/js/main.c862b34a.js.map"
+    "main.8c7e4d5a.css.map": "/Portfolio/static/css/main.8c7e4d5a.css.map",
+    "main.4d6e1489.js.map": "/Portfolio/static/js/main.4d6e1489.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbba791a.css",
-    "static/js/main.c862b34a.js"
+    "static/css/main.8c7e4d5a.css",
+    "static/js/main.4d6e1489.js"
   ]
 }
