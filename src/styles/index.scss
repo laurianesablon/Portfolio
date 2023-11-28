@@ -1,9 +1,10 @@
 @import "./variables.scss";
 
 .App {
-  font-family: "VT323", monospace;
+  font-family: "VT323", monospace, 'Roboto-Mono', monospace, 'Calibri', sans-serif;
   font-weight: 400;
   margin: 0px;
+}
 
   &.light {
     background-color: $background-light;

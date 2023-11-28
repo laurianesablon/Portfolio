@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import ReactIcon from "../assets/icons/React-icon.svg";
 import ReduxIcon from "../assets/icons/redux.svg";
@@ -13,7 +12,6 @@ import { useContext } from "react";
 export function Card({ title, content, imageUrl, technologies, githubUrl, websiteUrl }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const Sass = SassIcon;
   const { theme } = useContext(ThemeContext);
 
   const handleCardClick = () => {
@@ -49,18 +47,14 @@ export function Card({ title, content, imageUrl, technologies, githubUrl, websit
 
       <div className="card" onClick={handleCardClick}>
         <img src={imageUrl} alt="" />
-        <div className="card-content">
-          <a href="#" className="button">
-            Find out more <span className="material-symbols-outlined"></span>
-          </a>
-        </div>
+       
       </div>
 
       {isModalOpen && (
         <dialog open className="modal">
           <div className={`modal-container ${theme}`}>
             <div className="image-container">
-              <img src={imageUrl} />
+              <img src={imageUrl}  alt={title}/>
             </div>
 
             <div className="modal-content">
@@ -68,8 +62,8 @@ export function Card({ title, content, imageUrl, technologies, githubUrl, websit
               <p className={theme}>{content}</p>
 
               <div className="modal-link-buttons">
-                {githubUrl && <a href={githubUrl} target="_blank" ><div>See code</div></a>}
-                {websiteUrl && <a href={websiteUrl} target="_blank" ><div>See website</div></a>}
+                {githubUrl && <a href={githubUrl} target="_blank" rel="noopener noreferrer"><div>See code</div></a>}
+                {websiteUrl && <a href={websiteUrl} target="_blank" rel="noopener noreferrer"><div>See website</div></a>}
               </div>
               <div className="technologies">
                 <ul>

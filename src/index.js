@@ -5,7 +5,6 @@ import './styles/dist/animation.css';
 import './styles/dist/index.css';
 import './styles/dist/banner.css';
 import './styles/dist/aboutMe.css';
-import './styles/dist/mouse.css';
 import './styles/dist/projects.css';
 import './styles/dist/contact.css';
 import './styles/dist/footer.css';
