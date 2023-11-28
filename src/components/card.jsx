@@ -46,7 +46,7 @@ export function Card({ title, content, imageUrl, technologies, githubUrl, websit
       <h2>{title}</h2>
 
       <div className="card" onClick={handleCardClick}>
-        <img src={imageUrl} alt="" />
+        <img src={imageUrl} alt={title} />
        
       </div>
 
